@@ -6,5 +6,8 @@ export function GetFilms (text) {
     const url = 'https://api.themoviedb.org/3/search/movie?api_key=' + ApiToken + '&language=fr&query=' + text
     return fetch(url)
       .then((response) => response.json())
+      .then((responseJson) => {
+        return responseJson;
+      })
       .catch((error) => console.error(error))
   }

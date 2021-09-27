@@ -8,13 +8,13 @@ import {GetFilms} from "../../API";
 
 export default function Search() {
 
- const [filmResearch, setFilmResearch] = useState({});
+ const [filmResults, setFilmResults] = useState([]);
  const [textInput, setTextInput] = useState('Titre du film');
 
  const loadFilms = () => {
-  GetFilms("star").then(data => setFilmResearch(data)
-  )
-  console.log(textInput)
+  GetFilms('star').then(data => {
+    setFilmResults(data)
+  })
  }
 
   return (
@@ -25,9 +25,9 @@ export default function Search() {
         value={textInput}/>
       <Button title='rechercher' onPress={() => loadFilms()}/>
       <FlatList
-          data={filmData}
+          data={filmResults.results}
           keyExtractor={(item) => item.id.toString()}
-          renderItem={({item}) => <Text>{<FilmItem film={item}/>}</Text>}
+          renderItem={({item}) => <FilmItem film={item}/>}
         />
     </Container>
   );
