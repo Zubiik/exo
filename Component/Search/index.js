@@ -4,7 +4,7 @@ import filmData from '../Data';
 import { View, TextInput, Button, FlatList,StyleSheet,Text } from 'react-native';
 import { Container } from './styled';
 import FilmItem from '../FilmItem';
-import {GetFilms} from "../../API/Index";
+import {GetFilms} from "../../API";
 
 export default function Search() {
 
