@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, TextInput, Button, FlatList,StyleSheet,Text,Image } from 'react-native';
-import { Container, OverviewCustom, ImageCustom, HeaderContainer, DateCustom, InfoCustom, OverviewTextCustom } from './styled';
+import { Container, OverviewCustom, TitleTextCustom, DateTextCustom, ImageCustom, HeaderContainer, DateCustom, InfoCustom, VoteTextCustom, OverviewTextCustom } from './styled';
 
 export default function FilmItem({film}) {
 console.log(film);
@@ -11,8 +11,8 @@ console.log(film);
         </ImageCustom>
     <InfoCustom>
     <HeaderContainer>
-        <Text>{film.title}</Text>
-        <Text>{film.vote_average}/10</Text>
+        <TitleTextCustom>{film.title}</TitleTextCustom>
+        <VoteTextCustom>{film.vote_average}/10</VoteTextCustom>
     </HeaderContainer>
     
     <OverviewCustom>
@@ -20,7 +20,7 @@ console.log(film);
     </OverviewCustom>
 
     <DateCustom>
-        <Text>Sorti le {film.release_date}</Text>
+        <DateTextCustom >Sorti le {film.release_date}</DateTextCustom>
     </DateCustom>
     </InfoCustom>
 
