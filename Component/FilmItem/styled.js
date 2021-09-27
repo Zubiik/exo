@@ -1,12 +1,11 @@
 import styled from '@emotion/native';
 
-export const Container = styled.View`
-height: 190px;
+/*export const Container = styled.View`
 display: flex;
+min-height: 190px;
 flex-direction: row;
 flex: 1;
-margin:5px;
-background-color:white;
+background-color:yellow;
 border:1px solid black;
 `;
 
@@ -23,18 +22,18 @@ margin: 5px;
 export const OverviewCustom = styled.View`
 flex:7;
 border: 1px solid yellow;
-
-
-`;
-
-export const OverviewTextCustom = styled.Text`
-border: 1px solid red;
+background-color: red;
 display: flex;
 flex-wrap: wrap;
 `;
 
+export const OverviewTextCustom = styled.Text`
+border: 1px solid red;
+background-color: green;
+
+`;
+
 export const HeaderContainer = styled.View`
-background-color:pink;
 flex:3;
 `;
 
@@ -43,8 +42,70 @@ background-color:violet;
 flex: 1;
 `;
 
+export const DateTextCustom = styled.Text`
+font-size:14;
+`;
+
+export const TitleTextCustom = styled.Text`
+display: flex;
+font-size:20;
+font-weight: bold;
+flex:1;
+flex-wrap: wrap;
+padding-right: 5;
+
+`;
 export const InfoCustom = styled.View`
 background-color:steelblue;
+`;
+
+
+export const VoteTextCustom = styled.Text`
+font-size:26;
+font-weight: bold;
+`;*/
+
+export const Container = styled.View`
+border: orange;
+display: flex;
+flex-wrap: wrap;
 
 `;
 
+
+export const ImageCustom = styled.View`
+border: blue;
+`;
+
+export const OverviewCustom = styled.View`
+border: red;
+
+`;
+
+export const OverviewTextCustom = styled.Text`
+`;
+
+export const HeaderContainer = styled.View`
+
+`;
+
+export const DateCustom = styled.View`
+
+`;
+
+export const DateTextCustom = styled.Text`
+
+`;
+
+export const TitleTextCustom = styled.Text`
+
+
+`;
+export const InfoCustom = styled.View`
+
+`;
+
+
+export const VoteTextCustom = styled.Text`
+
+`;
