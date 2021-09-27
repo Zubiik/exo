@@ -66,15 +66,17 @@ font-weight: bold;
 `;*/
 
 export const Container = styled.View`
-border: orange;
-display: flex;
-flex-wrap: wrap;
-
+border: solid 2px orange;
+flex-direction: row;
+width: 100%;
 `;
 
 
 export const ImageCustom = styled.View`
 border: blue;
+height: 180px;
+width: 120px;
+
 `;
 
 export const OverviewCustom = styled.View`
@@ -102,7 +104,7 @@ export const TitleTextCustom = styled.Text`
 
 `;
 export const InfoCustom = styled.View`
-
+flex:1;
 `;
 
 
