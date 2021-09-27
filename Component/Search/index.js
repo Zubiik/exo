@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import filmData from '../Data';
 import { View, TextInput, Button, FlatList,StyleSheet,Text } from 'react-native';
 import { Container } from './styled';
@@ -12,10 +12,16 @@ export default function Search() {
  const [textInput, setTextInput] = useState('Titre du film');
 
  const loadFilms = () => {
-  GetFilms('star').then(data => {
+  GetFilms(textInput).then(data => {
     setFilmResults(data)
   })
  }
+
+ useEffect(() => {
+  GetFilms(textInput).then(data => {
+    setFilmResults(data)
+  })
+ }, [textInput])
 
   return (
     <Container >
