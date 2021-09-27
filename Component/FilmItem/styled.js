@@ -81,7 +81,6 @@ width: 120px;
 
 export const OverviewCustom = styled.View`
 border: red;
-
 `;
 
 export const OverviewTextCustom = styled.Text`
